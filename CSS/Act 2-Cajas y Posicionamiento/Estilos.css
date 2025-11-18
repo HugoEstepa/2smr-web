@@ -1,0 +1,33 @@
+            .caja2 {
+                margin: 2%;
+                background-color: #fef0a1;
+                padding: 20px;
+                border: 3px dashed #000;
+                width: 40%;
+                text-align: justify;
+                box-shadow: 5px 9px 3px gray;
+                clear: both;
+            }
+            .caja1{
+                margin: 2%;
+                background-color: #fef0a1;
+                padding: 20%;
+                border: 10px solid #e7e219;
+                width: 40%;
+                text-align: justify;
+                float: left;
+            }
+            .caja3 {
+                margin: 2%;
+                width: 40%;
+                text-align: justify;
+                position: absolute;
+                top: 0; 
+                right: 0;
+                float: right;
+            }
+            p.bola {
+                clear: both;
+                border: 10px solid black; 
+                border-image-source: url("img/bola-100.png");
+            }

@@ -1,0 +1,35 @@
+body {
+                background-color: lightgreen;
+               
+                }
+            h1 {
+                text-align: center;
+                background-color: lightcoral;
+                font-family: sans-serif;
+                margin: 10px;
+                letter-spacing: 10px;
+                font-size: 300%;
+                }
+            h2 {margin-top: 5%;
+                background-color: lightcoral;
+                color: white;
+                }
+            p {
+              text-indent: 2rem;
+              margin-left: 10%;
+              margin-right: 10%;  
+            }
+            img {
+                float: left;
+                border-color: red;
+                border-style: double;
+                margin-bottom: 10px;
+                margin-right: 10px;
+            }
+            .fondoblanco {
+                background-color: lightsalmon;
+            }
+            .spanrojo{
+                color: red;
+                
+            }

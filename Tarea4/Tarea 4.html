@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Formulario de prueba de HTML5</title>
+</head>
+<body>
+    <h1>Controles de formulario</h1>
+    <form method="get" action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><input type="text" id="nombre" name="nombre" required autofocus></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Correo electrónico:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="url">URL:</label></td>
+                    <td><input type="url" id="url" name="url" placeholder="Escribe la URL de tu página web personal"></td>
+                </tr>
+                <tr>
+                    <td><label for="ciudad">Ciudad:</label></td>
+                    <td>
+                        <select id="ciudad" name="ciudad">
+                            <option value="sevilla" selected>SEVILLA</option>
+                            <option value="malaga">MÁLAGA</option>
+                            <option value="cadiz">CÁDIZ</option>
+                            <option value="cordoba">CÓRDOBA</option>
+                            <option value="granada">GRANADA</option>
+                            <option value="huelva">HUELVA</option>
+                            <option value="jaen">JAÉN</option>
+                            <option value="almeria">ALMERÍA</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Otros datos</legend>
+            <table>
+                <tr>
+                    <td><label for="fecha">Fecha:</label></td>
+                    <td><input type="date" id="fecha" name="fecha"></td>
+                </tr>
+                <tr>
+                    <td><label for="tiempo">Tiempo:</label></td>
+                    <td><input type="time" id="tiempo" name="tiempo"></td>
+                </tr>
+                <tr>
+                    <td><label for="datetime">Fecha y hora:</label></td>
+                    <td>
+                        <!-- input type "datetime" está obsoleto en HTML5; se usa datetime-local -->
+                        <input type="datetime-local" id="datetime" name="datetime">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mes">Mes:</label></td>
+                    <td><input type="month" id="mes" name="mes"></td>
+                </tr>
+                <tr>
+                    <td><label for="semana">Semana:</label></td>
+                    <td><input type="week" id="semana" name="semana"></td>
+                </tr>
+                <tr>
+                    <td><label for="numero">Número (min -10, max 10):</label></td>
+                    <td><input type="number" id="numero" name="numero" min="-10" max="10" value="0"></td>
+                </tr>
+                <tr>
+                    <td><label for="telefono">Teléfono:</label></td>
+                    <td><input type="tel" id="telefono" name="telefono"></td>
+                </tr>
+                <tr>
+                    <td><label for="busqueda">Término de búsqueda:</label></td>
+                    <td><input type="search" id="busqueda" name="busqueda"></td>
+                </tr>
+                <tr>
+                    <td><label for="color">Color favorito:</label></td>
+                    <td><input type="color" id="color" name="color" value="#000000"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Otros controles</legend>
+            <p>
+                <strong>Aficiones</strong><br>
+                <!-- Ambas casillas envían el valor "1" cuando se chequean -->
+                <label><input type="checkbox" name="aficiones" value="1" checked> Cine</label>
+                &nbsp;
+                <label><input type="checkbox" name="aficiones" value="1"> Deporte</label>
+            </p>
+            <p>
+                <strong>Forma de pago</strong><br>
+                <label><input type="radio" name="pago" value="V" checked> Visa</label>
+                &nbsp;
+                <label><input type="radio" name="pago" value="A"> American Express</label>
+                &nbsp;
+                <label><input type="radio" name="pago" value="M"> MasterCard</label>
+            </p>
+        </fieldset>
+        <br>
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </p>
+    </form>
+</body>
+</html>
